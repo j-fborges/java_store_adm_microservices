@@ -1,0 +1,22 @@
+server:
+  port: 8083
+  wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  spring:
+    profiles:
+      active: native
+  data:
+      mongodb:
+        uri: mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.10
+        database: sale
+        auto-index-creation: true
+
+application:
+  productService:
+    url: http://localhost:8082
+    endpointFetchProduct: ${application.productService.url}/product
+  consumerService:
+    url: http://localhost:8081
+    endpointFetchConsumer: ${application.consumerService.url}/consumer/isRegistered/{id}
+application-version: 2.0
