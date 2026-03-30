@@ -6,6 +6,9 @@
 
 ### Repository Structure
 
+> [!NOTE]
+> **A monorepo was chosen to simplify versioning and present the project as a cohesive portfolio piece.**
+
 ```
 java_store_adm_microservices/
 ├── apps/
@@ -55,8 +58,6 @@ Each microservice exposes its own REST API and Swagger UI at `http://localhost:{
 ✅ **Cloud-Native Design** - Spring Cloud components for scalability  
 ✅ **Development Experience** - DevTools for hot reload and faster development  
 
-> [!NOTE]
-> **A monorepo was chosen to simplify versioning and present the project as a cohesive portfolio piece.**
 
 ## 🚀 Getting Started
 
