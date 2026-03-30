@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  spring:
+    profiles:
+      active: native
+  data:
+      mongodb:
+        uri: mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.10
+        database: consumer
+        auto-index-creation: true
+
+application-version: 1.0
